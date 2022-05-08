@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save tweets into Local Storage</title>
+
+    <!-- linking css files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 
+        Hey guys, thank you for looking up my script file, this is your homie Marcel Senga...
+        I'm really excited to get started, so what are we waiting for ? 😜
+     -->
+
+    <!-- the main header -->
+    <header id="main-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <h1 class="display-3 mb-4">Saving tweets into Local Storage</h1>
+            <p>
+              The app is about saving tweets into Local Storage, you just have
+              to fill out your tweet then make it public, you are free to remove
+              worthless tweets.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="header-img">
+              <img src="img/team-2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-12 col-md-6">
+            <form action="#" id="tweet-form">
+              <div class="mb-3">
+                <span class="small text-muted">Tweet:</span>
+                <textarea id="tweet" name="tweet" rows="3" class="form-control"></textarea>
+              </div>
+              <div class="mb-3">
+                <button class="btn-core w-100" id="submit-button" type="submit">
+                  SAVE TWEET <i class="bi bi-twitter"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-md-6">
+            <h4 class="display-5 mb-4">My tweets</h4>
+            <div class="tweet-list">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- customized popup -->
+    <div class="alert-popup">
+      <div class="heading">Tweet <span class="square ms-2"></span></div>
+      <div class="body">
+        <p>
+          Your tweet was added successfully. Feel free to read it out or delete
+          if it was an error.
+        </p>
+        <button class="btn btn-light okay">Okay</button>
+      </div>
+    </div>
+
+    <!-- the footer section -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          &copy; Copyright 2022 | Made with love 💖 by Senga :)
+        </div>
+      </div>
+    </footer>
+
+    <!-- linking js files -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+/* 
+    Hey guys, thank you for looking up my styles file, this is your homie Marcel Senga...
+    I'm really excited to get started, so what are we waiting for ? 😜
+*/
+
+/* GLOBAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  color: rgb(47, 47, 47);
+}
+
+input, select, textarea, button {
+    box-shadow: none !important;
+    font-weight: 300;
+}
+
+/* the main header */
+
+#main-header {
+    background: linear-gradient(45deg, rgb(38, 144, 206), rgb(22, 246, 253));
+    color: whitesmoke;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.header-img {
+    height: 350px;
+}
+.header-img img {
+    height: 100%;
+    width: auto;
+}
+
+/* customized button style */
+.btn-core {
+    padding: 8px 30px;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgb(38, 144, 206), rgb(37, 212, 218));
+    color: whitesmoke;
+    letter-spacing: 3px;
+    transition: .2s ease;
+    font-weight: 300;
+}
+.btn-core:hover {
+    transform: translateY(-3px);
+}
+
+/* tweet list styles */
+.tweet {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 7px 10px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.tweet div:nth-child(1) {
+    width: 90%;
+}
+.tweet div:nth-child(2) {
+    width: 7%;
+    text-align: right;
+}
+
+.tweet a.remove {
+    color: rgb(255, 91, 91) !important;
+    cursor: pointer;
+}
+
+/* customized alert popup styles */
+.alert-popup {
+    max-width: 350px;
+    height: 180px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border: 1px solid rgba(0,0,0,.1);
+    background: rgba(0,0,0,.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 15px 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(50px);
+    transition: .4s ease;
+}
+.alert-popup.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.alert-popup .heading {
+    margin-bottom: 1rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+}
+.alert-popup .heading .square {
+    display: inline-block;
+    width: 22.5px;
+    height: 22.5px;
+    border-radius: 5px;
+    background: rgb(120, 212, 255);
+}
+
+.footer {
+    width: 60%;
+    margin: 50px auto;
+    padding: 10px 50px;
+    border-top: 1px solid rgba(0,0,0,.1);
+    text-align: center;
+    font-size: .85rem;
+    color: rgb(165, 165, 165);
+}
